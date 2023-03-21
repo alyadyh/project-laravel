@@ -1,41 +1,6 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>alya's blog</title>
+@extends('layouts.web')
 
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" href="../resources/css/app.css" >
-    </head>
-    <body data-bs-spy="scroll" data-bs-target=".navbar">
-
-        <!-- NAVBAR -->
-         <nav class="navbar fixed-top py-3 navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Alya Dhiya.</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link px-lg-4" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-lg-4" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-lg-4" href="#porto">Portofolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link px-lg-4" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+@section('content')
 
         <!-- HOME -->
         <section id="home">
@@ -62,7 +27,7 @@
             </div>
         </section>
 
-        <div class="container divider"></div>   
+        <div class="divider"></div>
 
         <!-- ABOUT -->
         <section id="about">
@@ -205,7 +170,7 @@
             </div>
         </section>
 
-        <div class="container divider"></div>
+        <div class="divider"></div>
 
         <!-- PORTOFOLIO -->
         <section id="porto">
@@ -215,10 +180,155 @@
                         <h1>Check Out <span>My Portofolio.</span></h1>
                     </div>                    
                 </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img">
+                            <img src="../resources/assets/img/work-1.jpg" alt="" class="img-fluid">
+                        </div>
+                        </a>
+                        <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                            <h2 class="w-title">Lorem impsum dolor</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="w-like">
+                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img">
+                            <img src="../resources/assets/img/work-2.jpg" alt="" class="img-fluid">
+                        </div>
+                        </a>
+                        <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                            <h2 class="w-title">Loreda Cuno Nere</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="w-like">
+                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img">
+                            <img src="../resources/assets/img/work-3.jpg" alt="" class="img-fluid">
+                        </div>
+                        </a>
+                        <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                            <h2 class="w-title">Mavrito Lana Dere</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="w-like">
+                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img">
+                            <img src="../resources/assets/img/work-4.jpg" alt="" class="img-fluid">
+                        </div>
+                        </a>
+                        <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                            <h2 class="w-title">Bindo Laro Cado</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="w-like">
+                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img">
+                            <img src="../resources/assets/img/work-5.jpg" alt="" class="img-fluid">
+                        </div>
+                        </a>
+                        <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                            <h2 class="w-title">Studio Lena Mado</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="w-like">
+                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                    <div class="work-box">
+                        <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                        <div class="work-img">
+                            <img src="../resources/assets/img/work-6.jpg" alt="" class="img-fluid">
+                        </div>
+                        </a>
+                        <div class="work-content">
+                        <div class="row">
+                            <div class="col-sm-8">
+                            <h2 class="w-title">Studio Big Bang</h2>
+                            <div class="w-more">
+                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div class="w-like">
+                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <div class="container divider"></div>
+        <div class="divider"></div>
 
         <!-- CONTACT -->
         <section id="contact">
@@ -245,47 +355,4 @@
             </div>
         </section>
 
-        <!-- JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-        
-        <!-- about tab-content -->
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-        
-        <!-- about tab-arrow-accordion -->
-        <script>
-            const skillsContent = document.getElementsByClassName('skills-contents'),
-                skillsHeader = document.querySelectorAll('.skills-header');
-
-            function toggleSkills(){
-                let itemClass = this.parentNode.ClassName;
-
-                for(i = 0; i < skillsContent.length; i++){
-                    skillsContent[i].className = 'skills-contents skills-close';
-                }
-                if(itemClass === 'skills-contents skills-close'){
-                    this.parentNode.className = 'skills-contents skills-open';
-                }
-            }
-
-            skillsHeader.forEach((el) => {
-                el.addEventListener('click', toggleSkills());
-            });
-        </script>
-    </body>
-</html>
+@endsection
