@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
-    public function about(Request $request)
+    public function welcome(Request $request)
     {
-        return view('about');
+        return view('welcome');
     }
 
     public function admin(Request $request)

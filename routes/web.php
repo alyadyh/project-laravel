@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/about', [\App\Http\Controllers\WebController::class, 'about']);
+Route::get('/', [\App\Http\Controllers\WebController::class, 'welcome']);
 
 Route::get('/admin', function() {
     return view('admin');
 });
-Auth::routes();
+Auth::routes([
+    'register' => false,    //untuk menghilangkan fitur register
+    'confirm' => false,
+
+]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

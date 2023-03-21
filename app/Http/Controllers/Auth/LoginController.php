@@ -19,6 +19,7 @@ class LoginController extends Controller
     |
     */
 
+    //trait php
     use AuthenticatesUsers;
 
     /**
