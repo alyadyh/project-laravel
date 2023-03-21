@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap');
+@import url('https://api.iconify.design/uil/swatchbook.svg');
+@import url('https://api.iconify.design/uil/brackets-curly.svg');
+@import url('https://api.iconify.design/uil/angle-down.svg');
+
+:root {
+    --dark1: #212021;
+    --dark2: #2D2B29;
+    --brand: #ed9902;
+    --white: #fff;
+    --body: #9B968B;
+}
+
+body {
+    color: var(--body);
+    font-family: 'rubik', sans-serif;
+    background-color: var(--dark1);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    color: var(--white);
+}
+
+a {
+    transition: all 0.4s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--dark1);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .nav-link::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: 15%;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.navbar .nav-link:hover::after {
+    width: 75%;
+}
+
+/* HOME */
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home h1{
+    font-weight: 600;
+}
+
+#home .display-4 span {
+    color: var(--brand);
+}
+
+#home .person-is span{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: var(--white);
+    margin-right: 8px;
+    text-transform: uppercase;
+}
+
+#home img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    justify-self: center;
+    align-self: center;
+}
+
+.person-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/* BTN */
+.btn {
+    padding: 10px 17px;
+    margin-top: 10px;
+}
+
+.btn-brand {
+    background-color: var(--brand);
+    border-color: var(--brand);
+    border-radius: 100px;
+}
+
+.btn-brand:hover {
+    background-color: transparent;
+    border-color: var(--brand);
+    color: var(--brand);
+}
+
+/* DIVIDER */
+.divider {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ABOUT */
+
+#about .intro span {
+    color: var(--brand);
+}
+
+.col-1 {
+    width: 30%;
+    height: 100%;
+    margin-top: 25px;
+}
+
+.col-2 {
+    flex-basis: 60%;
+    margin-top: 25px;
+}
+  
+.tab-titles {
+    display: flex;
+}
+  
+.tab-links {
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+  
+.tab-links.active-link::after {
+    width: 50%;
+}
+  
+.tab-contents {
+    display: none;
+    list-style: none;
+    margin: 10px 0 20px;
+}
+  
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* ABOUT-SKILLS */
+.skills-header {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.skills-header h2 {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.skills-icon, .skills-arrow {
+    font-size: 25px;
+    color: var(--brand);
+}
+
+.skills-icon {
+    margin-right: var(--brand);
+}
+
+.skills-arrow {
+    margin-left: auto;
+    transition: .4s;
+}
+
+.skills-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.skills-data h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills-data p {
+    font-size: 14px;
+    color: var(--brand);
+}
+
+.skills-bar, .skills-percent {
+    height: 5px;
+    border-radius: .25rem;
+}
+
+.skills-bar {
+    background-color: var(--dark2);
+}
+
+.skills-percent {
+    display: block;
+    background-color: var(--brand);
+}
+
+.skills-figma {
+    width: 90%;
+}
+
+.skills-sketch {
+    width: 65%;
+}
+
+.skills-psd {
+    width: 70%;
+}
+
+.skills-figma {
+    width: 90%;
+}
+
+.skills-css {
+    width: 75%;
+}
+
+.skills-js {
+    width: 70%;
+}
+
+.skills-open .skills-grid {
+    height: max-content;
+    margin-bottom: 10px;
+}
+
+.skills-open .skills-arrow {
+    transform: rotate(-180deg);
+}
+
+.skills-close .skills-grid {
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* PORTOFOLIO */
+#porto .intro span {
+    color: var(--brand);
+}
+
+/* CONTACT */
+#contact .intro span {
+    color: var(--brand);
+}
+
+#contact .intro {
+    margin-bottom: 15px;
+}
+
+form .form-control {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+form .form-control:focus {
+    box-shadow: none;
+    border-color: var(--brand);
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--white);
+}
