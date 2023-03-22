@@ -49,10 +49,94 @@
                             <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
 
-                        <div class="tab-contents active-tab" id="skills">
+                        <div id="skills">
+                            <div class="container">
+                                <div class="accordion" id="skill">
+                                    <div class="card">
+                                                  <div class="card-header" id="skillshead1">
+                                                      <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#skills1"
+                                                      aria-expanded="true" aria-controls="uiux">UI/UX</a>
+                                                  </div>
+                          
+                                                  <div id="skills1" class="collapse show" aria-labelledby="skillshead1" data-parent="#skill">
+                                                      <div class="card-body">
+                                                        <div class="skills-grid" id="skills-grid">
+                                                            <div class="skills-data">
+                                                                <h3>FIGMA</h3>
+                                                                <p>90%</p>
+                                                            </div>
+                                                            <div class="skills-bar">
+                                                                <span class="skills-percent skills-figma"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skills-grid">
+                                                            <div class="skills-data">
+                                                                <h3>Sketch</h3>
+                                                                <p>65%</p>
+                                                            </div>
+                                                            <div class="skills-bar">
+                                                                <span class="skills-percent skills-sketch"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skills-grid">
+                                                            <div class="skills-data">
+                                                                <h3>Photoshop</h3>
+                                                                <p>70%</p>
+                                                            </div>
+                                                            <div class="skills-bar">
+                                                                <span class="skills-percent skills-psd"></span>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                              <div class="card">
+                                                  <div class="card-header" id="skillshead2">
+                                                      <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#skills2"
+                                                      aria-expanded="true" aria-controls="skills2">Front-End Development</a>
+                                                  </div>
+                          
+                                                  <div id="skills2" class="collapse" aria-labelledby="skillshead2" data-parent="#skill">
+                                                      <div class="card-body">
+                                                        <div class="skills-grid">
+                                                            <div class="skills-data">
+                                                                <h3>HTML</h3>
+                                                                <p>90%</p>
+                                                            </div>
+                                                            <div class="skills-bar">
+                                                                <span class="skills-percent skills-html"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skills-grid">
+                                                            <div class="skills-data">
+                                                                <h3>CSS</h3>
+                                                                <p>75%</p>
+                                                            </div>
+                                                            <div class="skills-bar">
+                                                                <span class="skills-percent skills-css"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="skills-grid">
+                                                            <div class="skills-data">
+                                                                <h3>JavaScript</h3>
+                                                                <p>70%</p>
+                                                            </div>
+                                                            <div class="skills-bar">
+                                                                <span class="skills-percent skills-js"></span>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {{-- <div class="tab-contents" id="skills">
                             <!-- SKILLS 1 -->
-                            <div class="skills-contents skills-open">
-                                <div class="skills-header">
+                            <div class="skills-contents">
+                                <div class="skills-header" id="uiux">
                                     <i class="iconify skills-icon" data-icon="uil:swatchbook"></i>
                                     <div>
                                         <h2>UI/UX</h2>
@@ -134,7 +218,7 @@
                                 <li><span>2025</span><br>B.Comp.Sc from Bina Nusantara University</li>
                                 <li><span>2021</span><br>SMA Muhammadiyah 2 Surabaya</li>
                             </ul>
-                        </div>
+                        </div> --}}
 
                             
                             <!-- <ul>
@@ -172,159 +256,79 @@
 
         <div class="divider"></div>
 
-        <!-- PORTOFOLIO -->
+        <!-- PORTFOLIO -->
         <section id="porto">
             <div class="container">
-                <div class="intro row">
-                    <div class="col-12 intro">
-                        <h1>Check Out <span>My Portofolio.</span></h1>
-                    </div>                    
+                <div class="intro row mb-5 align-items-center">
+                <div class="col-md-12 col-lg-6 mb-4 mb-lg-0 intro" data-aos="fade-up">
+                    <h1>My <span>Portfolio.</span></h1>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                        <div class="work-img">
-                            <img src="../resources/assets/img/work-1.jpg" alt="" class="img-fluid">
-                        </div>
-                        </a>
-                        <div class="work-content">
-                        <div class="row">
-                            <div class="col-sm-8">
-                            <h2 class="w-title">Lorem impsum dolor</h2>
-                            <div class="w-more">
-                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                            </div>
-                            </div>
-                            <div class="col-sm-4">
-                            <div class="w-like">
-                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
+                {{-- <div class="col-md-12 col-lg-6 text-start text-lg-end intro" data-aos="fade-up" data-aos-delay="100">
+                  <div id="filters" class="filters">
+                    <a href="#" data-filter="*" class="active">All</a>
+                    <a href="#" data-filter=".web">Web</a>
+                    <a href="#" data-filter=".design">Design</a>
+                    <a href="#" data-filter=".branding">Branding</a>
+                    <a href="#" data-filter=".photography">Photography</a>
+                  </div>
+                </div> --}}
+              </div>
+              <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+                <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Boxed Water</h3>
+                      <span>Web</span>
                     </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                        <div class="work-img">
-                            <img src="../resources/assets/img/work-2.jpg" alt="" class="img-fluid">
-                        </div>
-                        </a>
-                        <div class="work-content">
-                        <div class="row">
-                            <div class="col-sm-8">
-                            <h2 class="w-title">Loreda Cuno Nere</h2>
-                            <div class="w-more">
-                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                            </div>
-                            </div>
-                            <div class="col-sm-4">
-                            <div class="w-like">
-                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                        <div class="work-img">
-                            <img src="../resources/assets/img/work-3.jpg" alt="" class="img-fluid">
-                        </div>
-                        </a>
-                        <div class="work-content">
-                        <div class="row">
-                            <div class="col-sm-8">
-                            <h2 class="w-title">Mavrito Lana Dere</h2>
-                            <div class="w-more">
-                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                            </div>
-                            </div>
-                            <div class="col-sm-4">
-                            <div class="w-like">
-                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                        <div class="work-img">
-                            <img src="../resources/assets/img/work-4.jpg" alt="" class="img-fluid">
-                        </div>
-                        </a>
-                        <div class="work-content">
-                        <div class="row">
-                            <div class="col-sm-8">
-                            <h2 class="w-title">Bindo Laro Cado</h2>
-                            <div class="w-more">
-                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                            </div>
-                            </div>
-                            <div class="col-sm-4">
-                            <div class="w-like">
-                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                        <div class="work-img">
-                            <img src="../resources/assets/img/work-5.jpg" alt="" class="img-fluid">
-                        </div>
-                        </a>
-                        <div class="work-content">
-                        <div class="row">
-                            <div class="col-sm-8">
-                            <h2 class="w-title">Studio Lena Mado</h2>
-                            <div class="w-more">
-                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                            </div>
-                            </div>
-                            <div class="col-sm-4">
-                            <div class="w-like">
-                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                    <div class="col-md-4">
-                    <div class="work-box">
-                        <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                        <div class="work-img">
-                            <img src="../resources/assets/img/work-6.jpg" alt="" class="img-fluid">
-                        </div>
-                        </a>
-                        <div class="work-content">
-                        <div class="row">
-                            <div class="col-sm-8">
-                            <h2 class="w-title">Studio Big Bang</h2>
-                            <div class="w-more">
-                                <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                            </div>
-                            </div>
-                            <div class="col-sm-4">
-                            <div class="w-like">
-                                <a href="porto.blade.php"> <span class="bi bi-plus-circle"></span></a>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
+                    <img class="img-fluid" src="../resources/assets/img/img_1.jpg">
+                  </a>
                 </div>
+                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Build Indoo</h3>
+                      <span>Photography</span>
+                    </div>
+                    <img class="img-fluid" src="../resources/assets/img/img_2.jpg">
+                  </a>
+                </div>
+                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Cocooil</h3>
+                      <span>Branding</span>
+                    </div>
+                    <img class="img-fluid" src="../resources/assets/img/img_3.jpg">
+                  </a>
+                </div>
+                <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Nike Shoe</h3>
+                      <span>Design</span>
+                    </div>
+                    <img class="img-fluid" src="../resources/assets/img/img_4.jpg">
+                  </a>
+                </div>
+                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Kitchen Sink</h3>
+                      <span>Photography</span>
+                    </div>
+                    <img class="img-fluid" src="../resources/assets/img/img_5.jpg">
+                  </a>
+                </div>
+                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                    <div class="work-info">
+                      <h3>Amazon</h3>
+                      <span>brandingn</span>
+                    </div>
+                    <img class="img-fluid" src="../resources/assets/img/img_6.jpg">
+                  </a>
+                </div>
+              </div>
             </div>
         </section>
 
@@ -354,5 +358,6 @@
                 </form>
             </div>
         </section>
+
 
 @endsection
