@@ -30,7 +30,7 @@
         <div class="divider"></div>
 
         <!-- ABOUT -->
-        <section id="about">
+        {{-- <section id="about">
             <div class="container">
                 <div class="intro row">
                     <h1>About <span>Me.</span></h1>
@@ -42,23 +42,25 @@
                             fuga repudiandae doloribus quis adipisci molestiae suscipit.
                         </p>
                     </div>
-                    <div class="col-2 ms-auto">
+                    <div class="col-2 col-md-12 col-lg-6 text-start text-lg-end ms-auto" data-aos="fade-up" data-aos-delay="100">
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
                             <p class="tab-links" onclick="opentab('education')">Education</p>
-                        </div>
+                        </div> --}}
 
-                        <div id="skills">
+                        {{-- <div id="skills">
                             <div class="container">
                                 <div class="accordion" id="skill">
                                     <div class="card">
-                                                  <div class="card-header" id="skillshead1">
-                                                      <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#skills1"
-                                                      aria-expanded="true" aria-controls="uiux">UI/UX</a>
-                                                  </div>
+                                            <div class="card-header" id="skillshead1">
+                                                <a class="btn-header-link" type="button" data-bs-toggle="collapse" data-bs-target="#skills1" aria-expanded="true" aria-controls="skills1">
+                                                    <i class="iconify skills-icon" data-icon="uil:swatchbook"></i>
+                                                    <h3>UI/UX</h3>
+                                                </a>
+                                            </div>
                           
-                                                  <div id="skills1" class="collapse show" aria-labelledby="skillshead1" data-parent="#skill">
+                                                  <div id="skills1" class="accordion-collapse collapse show" aria-labelledby="skillshead1" data-parent="#skill">
                                                       <div class="card-body">
                                                         <div class="skills-grid" id="skills-grid">
                                                             <div class="skills-data">
@@ -131,8 +133,10 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
+
+                        {{-- // Start here --}}
                         {{-- <div class="tab-contents" id="skills">
                             <!-- SKILLS 1 -->
                             <div class="skills-contents">
@@ -238,23 +242,23 @@
                                 <li><span>2021</span><br>SMA Muhammadiyah 2 Surabaya</li>
                             </ul>
                         </div> -->
-                    </div>
+                    {{-- </div>
                 </div>
                 <div class="about-data row">
                     <div>
                         <span class="about-info-title"></span>
                         <span class="about-info-text"></span>
                     </div>
-                </div>
+                </div> --}}
                 <!-- <div class="about-button row">
                     <a download="" href="#assets/pdf/cv.pdf" class="button button--flex">
                         Download My CV <i class="uil uil-download-alt btn-outline-secondary"></i>
                     </a>
                 </div> -->
-            </div>
-        </section>
-
-        <div class="divider"></div>
+            {{-- </div>
+        </section> --}}
+{{-- 
+        <div class="divider"></div> --}}
 
         <!-- PORTFOLIO -->
         <section id="porto">
@@ -275,7 +279,7 @@
               </div>
               <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
                 <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                  <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                       <h3>Boxed Water</h3>
                       <span>Web</span>
@@ -284,7 +288,7 @@
                   </a>
                 </div>
                 <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                  <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                       <h3>Build Indoo</h3>
                       <span>Photography</span>
@@ -293,7 +297,7 @@
                   </a>
                 </div>
                 <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                  <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                       <h3>Cocooil</h3>
                       <span>Branding</span>
@@ -302,7 +306,7 @@
                   </a>
                 </div>
                 <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                  <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                       <h3>Nike Shoe</h3>
                       <span>Design</span>
@@ -311,7 +315,7 @@
                   </a>
                 </div>
                 <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                  <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                       <h3>Kitchen Sink</h3>
                       <span>Photography</span>
@@ -320,7 +324,7 @@
                   </a>
                 </div>
                 <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="work-single.blade.php" class="item-wrap fancybox">
+                  <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                       <h3>Amazon</h3>
                       <span>brandingn</span>
