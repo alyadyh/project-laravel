@@ -346,15 +346,16 @@
                         <h1>Get in <span>touch.</span></h1>
                     </div>
                 </div>
-                <form action="#" class="row g-3">
+                <form method="POST" action="/contact" class="row g-3">
+                    {{ csrf_field() }}
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Enter your name">
+                        <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="Enter your name">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter your email">
+                        <input type="email" name="email" value="{{ old('email') }}" class="form-control" placeholder="Enter your email">
                     </div>
                     <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Enter message"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10" class="form-control" placeholder="Enter message"></textarea>
                     </div>
                     <div>
                         <button class="btn btn-brand">Send Message</button>
