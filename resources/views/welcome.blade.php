@@ -14,7 +14,7 @@
                             <span>Front End Developer</span>
                         </div>
                         <p class="mt-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam quas optio tempora voluptas dolor fuga error magni, expedita voluptates beatae corporis impedit minus, sint eveniet, rerum pariatur incidunt blanditiis!
+                            {{-- Lorem ipsum dolor sit amet consectetur adipisicing elit. A laboriosam quas optio tempora voluptas dolor fuga error magni, expedita voluptates beatae corporis impedit minus, sint eveniet, rerum pariatur incidunt blanditiis! --}}
                         </p>
                         <a href="#porto" class="btn btn-brand">Explore My Work</a>
                     </div>
@@ -256,8 +256,8 @@
                     </a>
                 </div> -->
             {{-- </div>
-        </section> --}}
-{{-- 
+        </section>
+
         <div class="divider"></div> --}}
 
         <!-- PORTFOLIO -->

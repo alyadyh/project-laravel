@@ -5,6 +5,8 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
+// berguna untuk insert data tanpa melalui form, misal ingin menambahkan database user 
+// agar dapat login tanpa menggunakan form register
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -18,5 +20,7 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        $this->call(UsersTableSeeder::class);
     }
 }
