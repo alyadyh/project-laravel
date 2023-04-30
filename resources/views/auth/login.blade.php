@@ -17,7 +17,7 @@
 <body class="hold-transition login-page">
 <div class="login-box">
   <div class="login-logo">
-    <a href="">{{ config('app.name') }}</a>
+    <a href="">Admin Login</a>
   </div>
   <!-- /.login-logo -->
   <div class="card">
@@ -65,7 +65,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #4b0082">Sign In</button>
           </div>
           <!-- /.col -->
         </div>

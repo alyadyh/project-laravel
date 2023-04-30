@@ -11,13 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('portfolios', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('category_id')->nullable(); //table ini boleh null atau tidak diisi
-            $table->string('image_file_url');
-            $table->string('title');
-            $table->text('description');
-            $table->text('url_link');
             $table->timestamps();
         });
     }
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('portfolios');
+        Schema::dropIfExists('posts');
     }
 };

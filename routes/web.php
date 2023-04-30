@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Models\Post;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [\App\Http\Controllers\WebController::class, 'welcome']);
+// Route::resource('/porto', [\App\Http\Controllers\WebController::class, 'post']);
+// Route::resource('/contact', [\App\Http\Controllers\WebController::class, 'contact']);
 
 Auth::routes([
     'register' => false,    //untuk menghilangkan fitur register
@@ -26,11 +29,18 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         return view('home');
     });
 });
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/upload', function () {
-    return view('admin');
-});
-Route::get('/upload', [App\Http\Controllers\HomeController::class, 'admin']);
-// Route::resource('/upload', [\App\Http\Controllers\WebController::class, 'admin']);
+// Route::get('/portfolios/{post:slug}', [App\Http\Controllers\PortfolioController::class, 'show']);
+
 Route::resource('/portfolios', \App\Http\Controllers\PortfolioController::class);
+
+
+// Route::get('/', 'PostController@index');
+// /*Route::get('/isi_post', function(){
+// 	return view('blog.isi_post');
+// });*/
+// Route::get('/isi-post/{slug}', 'PostController@isi_blog')->name('blog.isi');
+// Route::get('/list-post','PostController@list_blog')->name('blog.list');
+// Route::get('/cari',PostController@cari')->name('blog.cari');

@@ -168,19 +168,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
-  <aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
-      <img src="{{ asset('adminlte/img/AdminLTELogo.png') }}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
+  <aside class="main-sidebar sidebar-dark-indigo elevation-4">
 
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="../resources/assets/img/foto2.png" class="img-circle elevation-2" alt="User Image">
+          <img src="  ../resources/assets/img/foto2.png" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
           <a href="#" class="d-block">Alya Dhiya</a>
@@ -206,7 +201,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                with font-awesome or any other icon font library -->
           <li class="nav-item ">
             <a href="{{ route('home') }}" class="nav-link {{ request()->is('home') ? 'active' : '' }}">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-solid fa-home"></i>
               <p>
                 Dashboard
               </p>
@@ -214,7 +209,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </li>
           <li class="nav-item">
             <a href="{{ route('portfolios.index') }}" class="nav-link {{ request()->is('portfolios*') ? 'active' : '' }}">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="nav-icon fas fa-solid fa-folder-open"></i>
               <p>
                 Portfolio
               </p>

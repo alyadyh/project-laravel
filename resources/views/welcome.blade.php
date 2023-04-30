@@ -268,71 +268,86 @@
                     <h1>My <span>Portfolio.</span></h1>
                 </div>
                 {{-- <div class="col-md-12 col-lg-6 text-start text-lg-end intro" data-aos="fade-up" data-aos-delay="100">
-                  <div id="filters" class="filters">
+                <div id="filters" class="filters">
                     <a href="#" data-filter="*" class="active">All</a>
                     <a href="#" data-filter=".web">Web</a>
                     <a href="#" data-filter=".design">Design</a>
                     <a href="#" data-filter=".branding">Branding</a>
                     <a href="#" data-filter=".photography">Photography</a>
-                  </div>
+                </div>
                 </div> --}}
-              </div>
-              <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+            </div>
+        
+            <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
+
+                <!----CONNECT FROM DATABASE (BELUM BISA JALAN)---->
+                {{-- @foreach ($data as $post)
                 <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="#" class="item-wrap fancybox">
+                <a href="/portfolios={{ $post->image_file_url }}" target="_blank" class="{{ $post->title }}">
                     <div class="work-info">
-                      <h3>Boxed Water</h3>
-                      <span>Web</span>
+                    <h3>{{ $post->title }}</h3>
+                    <span>{{ $post->description }}</span>
                     </div>
-                    <img class="img-fluid" src="../resources/assets/img/img_1.jpg">
-                  </a>
+                    <img class="img-fluid" src="https://source.unsplash.com/500x400?{{ $post->image_file_url }}">
+                </a>
                 </div>
+                @endforeach --}}
+
                 <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="#" class="item-wrap fancybox">
-                    <div class="work-info">
-                      <h3>Build Indoo</h3>
-                      <span>Photography</span>
+                    <a href="#" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>LonelyScape</h3>
+                        <span>Build in Unity and Vuforia</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_1.png">
+                    </a>
                     </div>
-                    <img class="img-fluid" src="../resources/assets/img/img_2.jpg">
-                  </a>
+                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <a href="#" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>Kulinaria</h3>
+                        <span>Web using HTML, CSS, JS</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_2.png">
+                    </a>
                 </div>
-                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="#" class="item-wrap fancybox">
-                    <div class="work-info">
-                      <h3>Cocooil</h3>
-                      <span>Branding</span>
-                    </div>
-                    <img class="img-fluid" src="../resources/assets/img/img_3.jpg">
-                  </a>
-                </div>
+                {{-- <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <a href="#" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>Gramedia App Redesign</h3>
+                        <span>UI Design</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_7.png">
+                    </a>
+                </div> --}}
                 <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="#" class="item-wrap fancybox">
-                    <div class="work-info">
-                      <h3>Nike Shoe</h3>
-                      <span>Design</span>
-                    </div>
-                    <img class="img-fluid" src="../resources/assets/img/img_4.jpg">
-                  </a>
+                    <a href="https://www.figma.com/proto/AIecJGvdmhpmlq9GlT1Eye/Automated-Attendance-System?node-id=162-3828&starting-point-node-id=162%3A3828&scaling=contain" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>Auto-attendance System</h3>
+                        <span>UI Design</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_4.png">
+                    </a>
                 </div>
-                <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="#" class="item-wrap fancybox">
-                    <div class="work-info">
-                      <h3>Kitchen Sink</h3>
-                      <span>Photography</span>
-                    </div>
-                    <img class="img-fluid" src="../resources/assets/img/img_5.jpg">
-                  </a>
+                {{-- <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <a href="#" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>Kitchen Sink</h3>
+                        <span>Photography</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_5.jpg">
+                    </a>
                 </div>
                 <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                  <a href="#" class="item-wrap fancybox">
-                    <div class="work-info">
-                      <h3>Amazon</h3>
-                      <span>brandingn</span>
-                    </div>
-                    <img class="img-fluid" src="../resources/assets/img/img_6.jpg">
-                  </a>
-                </div>
-              </div>
+                    <a href="#" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>Amazon</h3>
+                        <span>brandingn</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_6.jpg">
+                    </a>
+                </div> --}}
+            </div>
             </div>
         </section>
 
@@ -348,7 +363,46 @@
                 </div>
                 <form method="POST" action="/contact" class="row g-3">
                     {{ csrf_field() }}
-                    <div class="form-group">
+                    <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-fullname">Name</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-fullname2" class="input-group-text"><i class="bx bx-user"></i></span>
+                            <input type="text" name="name" value="{{ old('name') }}" class="form-control" id="basic-icon-default-fullname" placeholder="John Doe" aria-label="John Doe" aria-describedby="basic-icon-default-fullname2" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-company">Company</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-company2" class="input-group-text"><i class="bx bx-buildings"></i></span>
+                            <input type="text" id="basic-icon-default-company" class="form-control" placeholder="Amazon Inc." aria-label="ACME Inc." aria-describedby="basic-icon-default-company2" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 col-form-label" for="basic-icon-default-email">Email</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span class="input-group-text"><i class="bx bx-envelope"></i></span>
+                            <input type="email" name="email" value="{{ old('email') }}" id="basic-icon-default-email" class="form-control" placeholder="john.doe@gmail.com" aria-label="john.doe" aria-describedby="basic-icon-default-email2" />
+                            {{-- <span id="basic-icon-default-email2" class="input-group-text">@gmail.com</span> --}}
+                          </div>
+                          <div class="form-text" style="color:rgba(255, 255, 255, 0.545)"> *Note: You can use letters, numbers & periods </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <label class="col-sm-2 form-label" for="basic-icon-default-message">Message</label>
+                        <div class="col-sm-10">
+                          <div class="input-group input-group-merge">
+                            <span id="basic-icon-default-message2" class="input-group-text"><i class="bx bx-comment"></i></span>
+                            <textarea name="message" id="basic-icon-default-message" cols="30" rows="6" class="form-control" placeholder="Hi, Do you have a moment to talk, Alya?" aria-label="Hi, Do you have a moment to talk Joe?" aria-describedby="basic-icon-default-message2"></textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                    {{-- <div class="form-group">
                         <input type="text" name="name" value="{{ old('name') }}" class="form-control" placeholder="Enter your name">
                     </div>
                     <div class="form-group">
@@ -356,13 +410,12 @@
                     </div>
                     <div class="form-group">
                         <textarea name="message" id="" cols="30" rows="10" class="form-control" placeholder="Enter message"></textarea>
-                    </div>
+                    </div> --}}
                     <div>
                         <button class="btn btn-brand">Send Message</button>
                     </div>
                 </form>
             </div>
         </section>
-
 
 @endsection

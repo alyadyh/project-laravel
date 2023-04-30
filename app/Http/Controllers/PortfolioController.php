@@ -38,6 +38,7 @@ class PortfolioController extends Controller
         $request->validate([
             'title' => 'required',
             'description' => 'required',
+            'url_link' => 'required',
             'image_file' => 'required',
         ]);
 
@@ -46,6 +47,7 @@ class PortfolioController extends Controller
         $newPortfolio = new Portfolio();
         $newPortfolio->title = $request->title;
         $newPortfolio->description = $request->description;
+        $newPortfolio->url_link = $request->url_link;
         $newPortfolio->image_file_url = '/storage/' . $imagePath;
         $newPortfolio->save();
 
@@ -55,9 +57,11 @@ class PortfolioController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(String $id)
     {
-        //
+        $data = Portfolio::findOrFail($id);
+
+        return view('portfolios.show', compact('data'));
     }
 
     /**
@@ -75,15 +79,20 @@ class PortfolioController extends Controller
      */
     public function update(Request $request, string $id)
     {
+        $imagePath = $request->file('image_file')->store('uploads', ['disk' => 'public']);
+
         $request->validate([
             'title' => 'required',
             'description' => 'required',
-            // 'image_file' => 'required',
+            'url_link' => 'required',
+            'image_file' => 'required',
         ]);
 
         $portfolio = Portfolio::findOrFail($id);
         $portfolio->title = $request->title;
         $portfolio->description = $request->description;
+        $portfolio->url_link = $request->url_link;
+        $portfolio->image_file_url = '/storage/' . $imagePath;
         $portfolio->save();
 
         return redirect()->route('portfolios.index');

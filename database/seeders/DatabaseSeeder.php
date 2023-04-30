@@ -17,8 +17,9 @@ class DatabaseSeeder extends Seeder
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
+        //     'title' => 'Personal Microsite',
+        //     'description' => 'Personal Microsite in Axure RP',
+        //     'image_file_url' => 'https://4wvth8.axshare.com'
         // ]);
 
         $this->call(UsersTableSeeder::class);
