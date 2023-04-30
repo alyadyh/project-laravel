@@ -294,39 +294,39 @@
                 @endforeach --}}
 
                 <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="#" target="_blank" class="item-wrap fancybox">
+                    <a href="https://github.com/alyadyh/lonelyscape" target="_blank" class="item-wrap fancybox">
                         <div class="work-info">
                         <h3>LonelyScape</h3>
-                        <span>Build in Unity and Vuforia</span>
+                        <span>iOS based AR using XCode</span>
                         </div>
                         <img class="img-fluid" src="../resources/assets/img/img_1.png">
                     </a>
                     </div>
                 <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="#" target="_blank" class="item-wrap fancybox">
+                    <a href="https://github.com/alyadyh/kulinaria-website" target="_blank" class="item-wrap fancybox">
                         <div class="work-info">
                         <h3>Kulinaria</h3>
-                        <span>Web using HTML, CSS, JS</span>
+                        <span>UI Design</span>
                         </div>
                         <img class="img-fluid" src="../resources/assets/img/img_2.png">
                     </a>
                 </div>
-                {{-- <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-                    <a href="#" target="_blank" class="item-wrap fancybox">
-                        <div class="work-info">
-                        <h3>Gramedia App Redesign</h3>
-                        <span>UI Design</span>
-                        </div>
-                        <img class="img-fluid" src="../resources/assets/img/img_7.png">
-                    </a>
-                </div> --}}
-                <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
+                {{-- <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
                     <a href="https://www.figma.com/proto/AIecJGvdmhpmlq9GlT1Eye/Automated-Attendance-System?node-id=162-3828&starting-point-node-id=162%3A3828&scaling=contain" target="_blank" class="item-wrap fancybox">
                         <div class="work-info">
                         <h3>Auto-attendance System</h3>
                         <span>UI Design</span>
                         </div>
                         <img class="img-fluid" src="../resources/assets/img/img_4.png">
+                    </a>
+                </div> --}}
+                <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <a href="https://www.figma.com/file/RtWprEd8kMAHfrFVkQKF3Y/Redesign-Gramedia-Mobile-App?node-id=53%3A161&t=RJE9miTnQaPrsdSk-1" target="_blank" class="item-wrap fancybox">
+                        <div class="work-info">
+                        <h3>Redesign Gramedia Mobile</h3>
+                        <span>UI Design</span>
+                        </div>
+                        <img class="img-fluid" src="../resources/assets/img/img_7.png">
                     </a>
                 </div>
                 {{-- <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
