@@ -60,6 +60,16 @@
                                                 placeholder="URL Link" name="url_link">
                                         </div>
                                         <div class="form-group">
+                                            <label>Category</label>
+                                            <select class="form-control">
+                                              <option>Web</option>
+                                              <option>Design</option>
+                                              <option>Branding</option>
+                                              <option>Photography</option>
+                                              <option>AR/VR</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
                                             <label>Image</label>
                                             <div class="input-group">
                                                 <div class="custom-file">

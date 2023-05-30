@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('portfolios', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('category_id')->nullable(); //table ini boleh null atau tidak diisi
+            $table->foreign('category_id')
+                ->references('id')
+                ->on('categories')
+                ->onUpdate('cascade')
+                ->onDelete('restrict');
             $table->string('image_file_url');
             $table->string('title');
             $table->text('description');

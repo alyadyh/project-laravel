@@ -2,17 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AddPortfolioRequest;
+use App\Http\Requests\UpdatePortfolioRequest;
 use App\Models\Portfolio;
-use App\Models\Category;
 use Illuminate\Http\Request;
 
-class PortfolioController extends Controller
+class ApiController extends Controller
 {
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
     /**
      * Display a listing of the resource.
      */
@@ -20,7 +16,7 @@ class PortfolioController extends Controller
     {
         $data = Portfolio::all();
 
-        return view('portfolios.index', compact('data'));
+        return response($data);
     }
 
     /**
@@ -28,22 +24,14 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        return view('portfolios.create');
+        //
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(AddPortfolioRequest $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'url_link' => 'required',
-            'category' => 'required',
-            'image_file' => 'required',
-        ]);
-
         $imagePath = $request->file('image_file')->store('uploads', ['disk' => 'public']);
 
         $newPortfolio = new Portfolio();
@@ -53,17 +41,15 @@ class PortfolioController extends Controller
         $newPortfolio->image_file_url = '/storage/' . $imagePath;
         $newPortfolio->save();
 
-        return redirect()->route('portfolios.index');
+        return response('add portfolio success');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(String $id)
+    public function show(string $id)
     {
-        $data = Portfolio::findOrFail($id);
-
-        return view('portfolios.show', compact('data'));
+        //
     }
 
     /**
@@ -71,24 +57,15 @@ class PortfolioController extends Controller
      */
     public function edit(string $id)
     {
-        $data = Portfolio::findOrFail($id);
-
-        return view('portfolios.edit', compact('data'));
+        //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(UpdatePortfolioRequest $request, string $id)
     {
         $imagePath = $request->file('image_file')->store('uploads', ['disk' => 'public']);
-
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'url_link' => 'required',
-            'image_file' => 'required',
-        ]);
 
         $portfolio = Portfolio::findOrFail($id);
         $portfolio->title = $request->title;
@@ -97,7 +74,7 @@ class PortfolioController extends Controller
         $portfolio->image_file_url = '/storage/' . $imagePath;
         $portfolio->save();
 
-        return redirect()->route('portfolios.index');
+        return response('update portfolio success');
     }
 
     /**
@@ -105,9 +82,6 @@ class PortfolioController extends Controller
      */
     public function destroy(string $id)
     {
-        $portfolio = Portfolio::findOrFail($id);
-        $portfolio->delete();
-
-        return redirect()->route('portfolios.index');
+        //
     }
 }

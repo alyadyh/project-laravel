@@ -60,6 +60,7 @@
                                             <input type="text" class="form-control" 
                                                 placeholder="URL Link" name="url_link">
                                         </div>
+                                        {{-- category --}}
                                         <div class="form-group">
                                             <label>Image</label>
                                             <div class="input-group">

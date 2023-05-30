@@ -36,11 +36,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('/portfolios', \App\Http\Controllers\PortfolioController::class);
 
-
-// Route::get('/', 'PostController@index');
-// /*Route::get('/isi_post', function(){
-// 	return view('blog.isi_post');
-// });*/
-// Route::get('/isi-post/{slug}', 'PostController@isi_blog')->name('blog.isi');
-// Route::get('/list-post','PostController@list_blog')->name('blog.list');
-// Route::get('/cari',PostController@cari')->name('blog.cari');
+Route::get('test',[Test::class,'index']);
+Route::get('test/category',[Test::class,'category']);
